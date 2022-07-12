@@ -1,0 +1,59 @@
+html{
+    background-image: url(img/Denmark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0, 0.6); 
+}
+
+h3{
+    text-decoration: underline;
+    text-decoration-color: pink;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif, verdana;
+    font-family: 'Open Sans', sans-serif, verdana;
+    text-align: center;
+}
+
+.glass-panel {
+    color: rgb(0, 0, 0);
+    margin: 30px auto;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 50%;
+    border-radius: 15px;
+    padding: 15px;
+    backdrop-filter: blur(25px);
+    }
+
+    .glass-button {
+    display: inline-block;
+    padding: 15px 25px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    }
+
+    .glass-button:hover {
+    background-color: rgba(255,255,255,0.2);
+    }
+
+    p{
+        font-size: 16px;
+        text-align: center;
+        font-weight: bold;
+        color: rgb(0, 0, 0, 0.7);
+    }
