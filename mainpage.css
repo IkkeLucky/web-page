@@ -64,13 +64,14 @@ body{
 
         .glass-button{
             backdrop-filter: blur(25px);
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(255,255,255,0.5);
+            color: black;
         }
         .glass-panel{
-            backdrop-filter: blur(100px);
             margin: auto;
             width: 85%;
-            background-color: rgba(255,255,255,0.06);
-            border: 1px solid rgba(255,255,255,0.1);
+            background-color: rgba(249, 254, 108, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(50px);
         }
     }
