@@ -61,7 +61,13 @@ body{
     }
 
     @media (max-width:500px){
-        h1{
-            color: red;
+
+        .glass-button{
+            backdrop-filter: blur(25px);
+        }
+        .glass-panel{
+            backdrop-filter: blur(100px);
+            margin: auto;
+            width: 85%;
         }
     }
