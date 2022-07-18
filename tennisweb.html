@@ -9,6 +9,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+<script src="backend.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">emailjs.init('dspPzuC4sDTyvvdMU')</script>
 </head>
 
 <body>
@@ -75,11 +80,11 @@
 
     <div class="contactBox">
         <form>
-            <input type="text" class="inputField" placeholder="Your Name">
-            <input type="email" class="inputField" placeholder="Your Email">
-            <input type="text" class="inputField" placeholder="Subject">
-            <textarea type="text" class="inputField textareaField" placeholder="Your Message" required></textarea>
-            <button type="button" class="btn">Submit</button>
+            <input type="text" id="fullName" class="inputField" placeholder="Your Name">
+            <input type="email" id="email_id" class="inputField" placeholder="Your Email">
+            <input type="text" id="subject" class="inputField" placeholder="Subject">
+            <textarea type="text" id="message" class="inputField textareaField" placeholder="Your Message" required></textarea>
+            <button type="button" class="btn" onclick="sendMail()">Submit</button>
         </form>
     </div>
 </section>
