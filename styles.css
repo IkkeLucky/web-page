@@ -1,0 +1,33 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar li {
+    list-style: none;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name {
+    display: absolute;
+    font-size: 100px;
+}
+
+.lastName {
+    display: absolute;
+    font-size: 100px;
+}
