@@ -1,8 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url(img/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #36393B;
 }
 
 #navbar ul {
@@ -14,6 +12,7 @@ body {
     list-style: none;
     margin-top: 15px;
     font-size: 20px;
+    color: #7B8CDE;
 }
 
 #hero {
@@ -25,9 +24,20 @@ body {
 .name {
     display: absolute;
     font-size: 100px;
+    color: #558564;
 }
 
 .lastName {
     display: absolute;
     font-size: 100px;
+    color: #C33C54;
+}
+
+p{ 
+    color: #E5E5E5;
+}
+
+.techStack {
+    display: flex;
+    flex-wrap: nowrap;
 }
