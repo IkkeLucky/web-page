@@ -37,7 +37,75 @@ p{
     color: #E5E5E5;
 }
 
+section {
+    padding: 30px;
+}
+
 .techStack {
     display: flex;
     flex-wrap: nowrap;
+}
+
+.techStack img {
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+}
+
+#contact {
+    background-color: #36393B;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #444;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contactBox {
+    background-color: #E5E5E5;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+    padding: 50px;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.inputField {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #444;
+    background-color: #f5f5f5;
+}
+
+.textareaField {
+    resize: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #444;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #222;
 }
