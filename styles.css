@@ -61,7 +61,7 @@ section {
 }
 
 h2 {
-    color: #444;
+    color: #F5F5F5;
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 30px;
@@ -108,4 +108,12 @@ h2 {
 
 .btn:hover {
     background-color: #222;
+}
+
+.toolbar a {
+    color: #558564;
+}
+
+#portfolio h2 {
+    color: #7B8CDE;
 }
