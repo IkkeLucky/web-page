@@ -1,71 +1,99 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #36393B;
+    color: #E5E5E5;
 }
 
 #navbar ul {
     display: flex;
     justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 #navbar li {
-    list-style: none;
-    margin-top: 15px;
     font-size: 20px;
     color: #7B8CDE;
+    margin-top: 15px;
+    cursor: pointer;
 }
 
 #hero {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 100px;
 }
 
 .name {
-    display: absolute;
     font-size: 100px;
     color: #558564;
+    margin-bottom: 0;
 }
 
 .lastName {
-    display: absolute;
     font-size: 100px;
     color: #C33C54;
+    margin-top: 0;
 }
 
-p{ 
-    color: #E5E5E5;
+p {
+    margin-bottom: 1rem;
 }
 
 section {
-    padding: 30px;
+    padding: 30px 0;
 }
 
 .techStack {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .techStack img {
-    width: 300px;
-    height: 300px;
-    margin: 15px;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+#about {
+    background-color: #F8F9FA;
+}
+
+#about h3 {
+    margin-top: 0;
+}
+
+.panel {
+    background-color: #F8F9FA;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.panel h3 {
+    margin-top: 0;
+}
+
+.toolbar a {
+    color: #558564;
+    margin-right: 10px;
+}
+
+#portfolio {
+    background-color: #F8F9FA;
+}
+
+#portfolio h2 {
+    color: #7B8CDE;
+    margin-top: 0;
 }
 
 #contact {
     background-color: #36393B;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-h2 {
-    color: #F5F5F5;
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 30px;
-    text-align: center;
+    padding: 50px 0;
 }
 
 .contactBox {
@@ -108,12 +136,4 @@ h2 {
 
 .btn:hover {
     background-color: #222;
-}
-
-.toolbar a {
-    color: #558564;
-}
-
-#portfolio h2 {
-    color: #7B8CDE;
 }
