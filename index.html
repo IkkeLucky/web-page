@@ -1,157 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+      <link rel="stylesheet" href="styles.css">
+      <title>Ignacio Marchesini</title>
+   </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ignacio Marchesini</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <script src="backend.js" type="text/javascript"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">emailjs.init('dspPzuC4sDTyvvdMU')</script>
-</head>
 
-<body>
+   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
-        <div class="container">
-            <a class="navbar-brand" href="#">Ignacio Marchesini</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#hero">Index</a>
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-circle">R</span>
+                <span class="nav__logo-name">Ignacio Marchesini</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <span class="nav__title">Menu</span>
+
+                <h3 class="nav__name">Ignacio</h3>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                    
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About me</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact Me</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </nav>
 
-    <section id="hero" class="py-5 text-center">
-        <h1 class="display-1">IGNACIO</h1>
-        <h1 class="display-1">MARCHESINI</h1>
-        <br>
-        <br>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <img src="img/html.png" alt="" class="img-fluid">
-                    <img src="img/css.png" alt="" class="img-fluid">
-                    <img src="img/tailwind.png" alt="" class="img-fluid">
-                    <img src="img/js.png" alt="" class="img-fluid">
-                    <img src="img/svelte.png" alt="" class="img-fluid">
-                    <img src="img/git.png" alt="" class="img-fluid">
-                    <img src="img/hosting.png" alt="" class="img-fluid">
-                    <img src="img/stripe.png" alt="" class="img-fluid">
+                <!-- close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="about" class="bg-light py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3>Discovering programming. HTML, CSS and a little bit of JavaScript</h3>
-                    <p>This is where I am at the moment, still learning! Work in progress.</p>
-                    <a href="development.html" target="_blank" class="btn btn-primary">Send me a message!</a>
-                </div>
-                <div class="col-lg-6">
-                    <h3>My journey through economics and trading in general</h3>
-                    <p>Wholesales, retail sales, digital sales, imports and exports.</p>
-                    <p>Trading cryptocurrencies, joining Apexit core team to launch a token and an NFT project.</p>
-                    <p>Building a community, raising funds, creating budgets and guiding projects into mainnet.</p>
-                    <p>Founder and Lead of Near Argentina.</p>
-                    <a href="business.html" target="_blank" class="btn btn-primary">Send me a message!</a>
+            <div class="nav__buttons">
+                <!-- toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
                 </div>
             </div>
-            <div class="row mt-4">
-                <div class="col-lg-6 offset-lg-3">
-                    <h3>My life as a Tennis Coach</h3>
-                    <p>I have been playing tennis for 17 years now, and in 2015 became a PTR certified Tennis Coach.</p>
-                    <p>I have PTR level 1 and studied in 2020 level 2. Played in ITF Juniors and ATP Tour.</p>
-                    <p>Tennis for development (kinder), juniors, adults and high performance.</p>
-                    <a href="tennis.html" target="_blank" class="btn btn-primary">Send me a message!</a>
-                </div>
-            </div>
-        </div>
-    </section>
+         </nav>
+      </header>
 
-    <section id="portfolio" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h2 class="card-title">Treblify</h2>
-                            <p class="card-text">Frontend for Treblify, decentralized music app. Currently working on it, work in progress!</p>
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+                <h1 class="home__name">Ignacio Marchesini</h1>
+                <div class="home__perfil">
+                    <div class="home__image">
+                        <img src="img/home-perfil.jpg" alt="image" class="home__img">
+                        <div class="home__shadow"></div>
+
+                        <img src="img/curved-arrow.svg" alt="" class="home__arrow">
+                        <img src="img/random-lines.svg" alt="" class="home__line">
+
+                        <div class="geometric-box"></div>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="#" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="#" target="_blank" class="home__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+
+                        <a href="#" target="_blank" class="home__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__info">
+                    <p class="home__description">
+                        <b>Frontend Developer</b> With knowledge in web development and design, I offer the best projects resulting in quality work.
+                    </p>
+
+                    <a href="#about" class="home__scroll">
+                        <div class="home__scroll-box">
+                            <i class="ri-arrow-down-s-line"></i>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h2 class="card-title">PassarellaDiosa</h2>
-                            <p class="card-text">Web design and development for Sarah Felicianni, based in Germany. Ecommerce and fashion store/blog.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="" class="card-img-top" alt="">
-                        <div class="card-body">
-                            <h2 class="card-title">Nexo Accesorios</h2>
-                            <p class="card-text">Web design and development for Nexo Accesorios, silver and steel jewelry. Catalog and personal tailored call to action</p>
-                        </div>
-                    </div>
+
+                        <span class="home__scroll-text">Scroll Down</span>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+         </section>
 
-    <section id="contact" class="bg-dark text-white py-5">
-        <div class="container">
-            <h2 class="text-center">Reach out personally if you want to know more!</h2>
-            <div class="contactBox mx-auto">
-                <form>
-                    <div class="mb-3">
-                        <input type="text" id="fullName" class="form-control" placeholder="Your Name">
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" id="email_id" class="form-control" placeholder="Your Email">
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" id="subject" class="form-control" placeholder="Subject">
-                    </div>
-                    <div class="mb-3">
-                        <textarea id="message" class="form-control" placeholder="Your Message" required rows="10" cols="50"></textarea>
-                    </div>
-                    <button type="button" class="btn btn-primary" onclick="sendMail()">Submit</button>
-                </form>
-            </div>
-        </div>
-    </section>
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            
+         </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-</body>
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            
+         </section>
 
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src=""></script>
+      
+      <!--=============== EMAIL JS ===============-->
+      
+
+      <!--=============== MAIN JS ===============-->
+      <script src="backend.js"></script>
+   </body>
 </html>

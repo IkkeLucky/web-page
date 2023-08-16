@@ -1,13 +1,44 @@
-//Script to get information from contact form
+/*=============== SHOW MENU ===============*/
+const navMenu = document.getElementById('nav-menu')
+const navToggle = document.getElementById('nav-toggle')
+const navClose = document.getElementById('nav-close')
 
-function sendMail(){
-    var params = {
-        from_name : document.getElementById("fullName").value,
-        email_id : document.getElementById("email_id").value,
-        subject : document.getElementById("subject").value,
-        message : document.getElementById("message").value
-    }
-    emailjs.send("service_7242hgg","template_ywvda0c", params).then(function (res) {
-        alert("Thanks for contacting me! Message sent! " + res.status);
-    }) 
+if(navToggle){
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu')
+    });
 }
+
+if(navClose){
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu')
+    });
+}
+
+/*=============== REMOVE MENU MOBILE ===============*/
+
+const navLink = document.querySelectorAll('.nav__link')
+
+const linkAction = () => {
+    const navMenu = document.getElementById('nav-menu')
+    navMenu.classList.remove('show-menu')
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/*=============== SHADOW HEADER ===============*/
+
+
+/*=============== EMAIL JS ===============*/
+
+
+/*=============== SHOW SCROLL UP ===============*/ 
+
+
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+
+
+/*=============== DARK LIGHT THEME ===============*/ 
+
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
