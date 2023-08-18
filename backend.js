@@ -38,6 +38,29 @@ window.addEventListener('scroll', shadowHeader)
 
 /*=============== EMAIL JS ===============*/
 
+function sendMail() {
+    var params = {
+        name : document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value, 
+    };
+
+    const serviceID = "service_a3ldc2a";
+    const templateID = "template_ywvda0c";
+
+    emailjs
+    .send(serviceID, templateID, params)
+    .then((res) => {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("subject").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("your message was sent successfully, thank you for your message!");
+    })
+    .catch((err) => console.log(err));
+}
 
 /*=============== SHOW SCROLL UP ===============*/ 
 
